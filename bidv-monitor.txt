@@ -1,0 +1,26 @@
+bidv-monitor/
+├── certs/
+│   ├── client_cert.pem          # Chứng chỉ client dùng cho TLS, JWS
+│   ├── private_key.pem          # Khóa riêng tư dùng cho JWS, TLS
+│   └── symmetric.key            # Khóa dùng cho JWE (nếu có)
+├── data/
+│   └── last_transactions.json   # Cache dữ liệu giao dịch mới nhất
+│   └── transactions.db          # Database lưu trữ dữ liệu
+├── logs/
+│   └── app.log                  # File log ứng dụng
+├── src/
+│   ├── app_config.py            # Cấu hình chung của dự án
+│   ├── bidv_api.py              # Wrapper gọi API BIDV
+│   ├── token_manager.py         # Quản lý token OAuth2 (lấy, refresh)
+│   ├── oauth_listener.py        # Flask app để nhận callback OAuth2
+│   ├── transaction_monitor.py   # Module kiểm tra giao dịch tự động (nếu có)
+│   ├── zalo_api.py              # Module gửi thông báo qua Zalo (nếu có)
+│   └── main.py                  # Entry point tổng (chạy chính, điều phối)
+├── utils/
+│   ├── crypto_utils.py          # Chữ ký JWS, mã hóa JWE, các hàm crypto
+│   ├── network_utils.py         # Thiết lập session HTTP, SSL adapter,...
+│   ├── db_manager.py	         # Thiết lập database để chứa các giao dịch
+│   ├── logger.py	     		 # Hàm để ghi log cho toàn ứng dụng
+├── .env                         # Biến môi trường (client_id, secret...)
+├── requirements.txt             # Thư viện Python cần cài đặt
+├── sandbox_openssl.cnf          # File cấu hình OpenSSL

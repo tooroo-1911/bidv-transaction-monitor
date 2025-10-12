@@ -1,0 +1,13 @@
+2025-08-09 19:29:12,966 [INFO] BIDV Transaction Monitor khởi động
+2025-08-09 19:29:12,966 [INFO] Vòng lặp đồng bộ mỗi 60 giây
+2025-08-09 19:29:12,967 [INFO] Bảng processed_transactions đã sẵn sàng.
+2025-08-09 19:29:12,968 [INFO] Tổng số giao dịch: 1
+2025-08-09 19:29:12,968 [INFO] 5 giao dịch gần nhất:
+2025-08-09 19:29:12,969 [INFO]    1. 01/01/2020 06:08:00 - Rút: 10,000 VND
+2025-08-09 19:29:12,969 [INFO] Lần đồng bộ #1
+2025-08-09 19:29:13,024 [INFO] Calling BIDV API: https://openapi.bidv.com.vn/bidv/sandbox/open-banking/inquire-account-transaction/v1
+2025-08-09 19:29:13,226 [INFO] API request successful (plaintext response)
+2025-08-09 19:29:13,227 [INFO] Bắt đầu xử lý 1 giao dịch từ API
+2025-08-09 19:29:13,230 [INFO] Đã xử lý 1 giao dịch, 0 giao dịch mới
+2025-08-09 19:29:13,232 [INFO] Thống kê: 1 giao dịch, Số dư: 100,000,000 → 1,002,075,285 VND
+2025-08-09 19:29:13,232 [INFO] Không có giao dịch mới (Tổng trong DB: 1)

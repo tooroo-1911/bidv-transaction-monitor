@@ -1,0 +1,8 @@
+requests
+schedule
+pyjwt
+cryptography
+python-dateutil
+certifi 
+dotenv
+jwcrypto
