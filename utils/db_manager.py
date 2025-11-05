@@ -35,7 +35,7 @@ def create_table():
             )
             """
         )
-        # Tạo index để tìm kiếm nhanh hơn
+
         conn.execute(
             """
             CREATE INDEX IF NOT EXISTS idx_tranDate

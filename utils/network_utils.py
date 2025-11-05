@@ -18,6 +18,7 @@ class SSLAdapter(HTTPAdapter):
     def _create_ssl_context(self):
         ctx = ssl.create_default_context()
 
+        ctx.options &= ~ssl.OP_NO_RENEGOTIATION
         if not config.TLS_VERIFY:
             ctx.check_hostname = False
             ctx.verify_mode = ssl.CERT_NONE

@@ -13,8 +13,8 @@ bidv-monitor/
 │   ├── bidv_api.py              # Wrapper gọi API BIDV
 │   ├── token_manager.py         # Quản lý token OAuth2 (lấy, refresh)
 │   ├── oauth_listener.py        # Flask app để nhận callback OAuth2
-│   ├── transaction_monitor.py   # Module kiểm tra giao dịch tự động (nếu có)
-│   ├── zalo_api.py              # Module gửi thông báo qua Zalo (nếu có)
+│   ├── transaction_monitor.py   # Module kiểm tra giao dịch tự động
+│   ├── zalo_api.py              # Module gửi thông báo qua Zalo (đợi zalo cấp API)
 │   └── main.py                  # Entry point tổng (chạy chính, điều phối)
 ├── utils/
 │   ├── crypto_utils.py          # Chữ ký JWS, mã hóa JWE, các hàm crypto
